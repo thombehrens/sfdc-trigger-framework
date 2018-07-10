@@ -149,7 +149,7 @@ Here are all of the methods that you can override. All of the context possibilit
 * `afterUndelete()`
 
 ## Update by Thom (June 2018)
-context variable and TriggerContext enum made public for use in switch/when flow control inside control methods:
+context variable and TriggerContext enum made public for use in switch/when flow control inside handler methods:
 
 ```java
 switch on context {
