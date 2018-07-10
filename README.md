@@ -147,3 +147,16 @@ Here are all of the methods that you can override. All of the context possibilit
 * `afterUpdate()`
 * `afterDelete()`
 * `afterUndelete()`
+
+## Update by Thom (June 2018)
+context variable and TriggerContext enum made public for use in switch/when flow control inside control methods:
+
+```java
+switch on context {
+    when BEFORE_INSERT {
+        // do basic updates
+    }
+    when BEFORE_UPDATE {
+        // do updates which require Trigger.old or other considerations
+    }
+}
