@@ -6,7 +6,7 @@ public virtual class TriggerHandler {
 
   // the current context of the trigger, overridable in tests
   @TestVisible
-  private TriggerContext context;
+  public TriggerContext context;
 
   // the current context of the trigger, overridable in tests
   @TestVisible
@@ -226,7 +226,7 @@ public virtual class TriggerHandler {
 
   // possible trigger contexts
   @TestVisible
-  private enum TriggerContext {
+  public enum TriggerContext {
     BEFORE_INSERT, BEFORE_UPDATE, BEFORE_DELETE,
     AFTER_INSERT, AFTER_UPDATE, AFTER_DELETE,
     AFTER_UNDELETE
